@@ -1,10 +1,15 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vipul Panchal – Home</title>
-    style.css
+
+    <!-- Correct CSS link -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
@@ -12,18 +17,34 @@
     <h2>Forsker | Cheminformatics | Computational Drug Discovery</h2>
 </header>
 
-<nav>
-    Home
-    About
-    Research
-    Publications
-    Projects
-    Contact
+<!-- ✅ Automatic Navigation Bar -->
+<nav class="navbar">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="research.html" class="nav-link">Research</a>
+    <a href="publications.html" class="nav-link">Publications</a>
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="contact.html" class="nav-link">Contact</a>
 </nav>
+
+<!-- ✅ Highlight Active Page -->
+<script>
+    const currentPage = window.location.pathname.split("/").pop();
+    const links = document.querySelectorAll(".nav-link");
+
+    links.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
+    });
+</script>
 
 <section>
     <h3>Welcome</h3>
-    <p>This is my professional academic website.</p>
+    <p>
+        This is the homepage of my professional academic website. 
+        Explore the links above to learn more about my research, publications, and projects.
+    </p>
 </section>
 
 <footer>
