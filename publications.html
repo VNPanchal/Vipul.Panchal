@@ -1,37 +1,127 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Publications</title>
-    style.css
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications – Vipul Panchal</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<nav>
-    About
-    Research
-    Grants
-    Publications
-    Projects
-    Contact</a>
+<header>
+    <h1>Publications</h1>
+</header>
+
+<nav class="navbar">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="research.html" class="nav-link">Research</a>
+    <a href="grants.html" class="nav-link">Grants</a>
+    <a href="publications.html" class="nav-link">Publications</a>
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="contact.html" class="nav-link">Contact</a>
 </nav>
 
+<script>
+    const current = window.location.pathname.split('/').pop();
+    document.querySelectorAll('.nav-link').forEach(l => {
+        if (l.getAttribute('href') === current) l.classList.add('active');
+    });
+</script>
+
 <section>
-    <h3>publications</h3>
-    <ul>
-        <li>Hübenthal A†, Panchal V, Brenk R, Mack M*. Functional analysis of thiamine pyrophosphate-responsive riboswitches in human bacterial pathogens of the ESKAPE group using a dual-luciferase reporter gene assay. J Bacteriol 2025. 207: e00308-25.</li>
-        <li>Panchal VN*‡., Husmann JA‡, Gunther K, Zeeshan M, Haug BE, Brenk R*. Discovery of RNA-binding fragments using biolayer interferometry. RSC Med. Chem. 2025, 16, 5629–5640.</li>
-        <li>Patil SS†, Panchal V, Røstbø T, Romanyuk S, Hollås H, Brenk R, Grindheim AK and Vedeler A*. RNA-binding is an ancient trait of the Annexin family. Front. Cell Dev. Biol. 2023, 11:1161588.</li>
-        <li>Lundquist KP†, Panchal V, Gotfredsen CH, Brenk R, Clausen MH*. Fragment-Based Drug Discovery for RNA Targets. ChemMedChem 2021, 16, 2588.</li>
-        <li>Panchal V‡, Kumar S‡, Hossain SN, Vasudevan D*. Structure analysis of thymidylate synthase from white spot syndrome virus reveals WSSV-specific structural elements. Int. J. Biol. Macromol. 2021, 167, 1168–1175.</li>
-        <li>Panchal V*†, Brenk R*. Riboswitches as Drug Targets for Antibiotics. Antibiotics. 2021; 10(1):45.</li>
-        <li>Panchal V†, Jatana N, Malik A, Taneja B, Pal R, Bhatt A, Besra GS, Thukral L, Chaudhary S*, Rao V*. A novel mutation alters the stability of PapA2 resulting in the complete abrogation of sulfolipids in clinical mycobacterial strains. FASEB Bioadv. 2019 Apr 10;1(5):306-319.</li>
-        <li>Bothra A†, Arumugam P, Panchal V. et al. Phospholipid homeostasis, membrane tenacity and survival of Mtb in lipid rich conditions is determined by MmpL11 function. Sci Rep 2018 8, 8317.</li>
-        <li>Panchal V†, Bothra A, Chaudhary S*, Rao V* Molecular basis for mis-sense mutation-induced functional loss in Mtb PapA2, Acta Crystallogr A Found Adv, 2017, 73, C267.</li>
-        <li>Laddha NC, Dwivedi M, Mansuri MS, Singh M, Gani AR, Yeola AP, Panchal VN, Khan F, Dave DJ, Patel A, Madhavan SE, Gupta, R., Marfatia, Z., Marfatia, Y.S. and Begum, R. Role of oxidative stress and autoimmunity in onset and progression of vitiligo. Exp Dermatol. 2014 23: 352-353.</li>
-    </ul>
-</section>  
-  
+    <h3>Peer‑Reviewed Publications</h3>
+
+    <ol>
+        <li>
+            <b>Hübenthal A†, Panchal V, Brenk R, Mack M*</b>.  
+            Functional analysis of thiamine pyrophosphate-responsive riboswitches in human bacterial pathogens of the ESKAPE group using a dual-luciferase reporter gene assay.  
+            <i>J Bacteriol</i> 2025; 207: e00308‑25.  
+            <a href="https://doi.org/10.1128/jb.00308-25" target="_blank">https://doi.org/10.1128/jb.00308-25</a>
+        </li>
+
+        <li>
+            <b>Panchal VN*‡, Husmann JA‡, Gunther K, Zeeshan M, Haug BE, Brenk R*</b>.  
+            Discovery of RNA-binding fragments using biolayer interferometry.  
+            <i>RSC Med. Chem.</i> 2025, 16, 5629–5640.  
+            <a href="https://doi.org/10.1039/D5MD00673B" target="_blank">https://doi.org/10.1039/D5MD00673B</a>
+        </li>
+
+        <li>
+            <b>Patil SS†, Panchal V, Røstbø T, Romanyuk S, Hollås H, Brenk R, Grindheim AK, Vedeler A*</b>.  
+            RNA-binding is an ancient trait of the Annexin family.  
+            <i>Front. Cell Dev. Biol.</i> 2023; 11:1161588.  
+            <a href="https://doi.org/10.3389/fcell.2023.1161588" target="_blank">https://doi.org/10.3389/fcell.2023.1161588</a>
+        </li>
+
+        <li>
+            <b>Lundquist KP†, Panchal V, Gotfredsen CH, Brenk R, Clausen MH*</b>.  
+            Fragment-Based Drug Discovery for RNA Targets.  
+            <i>ChemMedChem</i> 2021; 16, 2588.  
+            <a href="https://doi.org/10.1002/cmdc.202100324" target="_blank">https://doi.org/10.1002/cmdc.202100324</a>
+        </li>
+
+        <li>
+            <b>Panchal V‡, Kumar S‡, Hossain SN, Vasudevan D*</b>.  
+            Structure analysis of thymidylate synthase from white spot syndrome virus reveals WSSV-specific structural elements.  
+            <i>Int. J. Biol. Macromol.</i> 2021; 167, 1168–1175.  
+            <a href="https://doi.org/10.1016/j.ijbiomac.2020.11.071" target="_blank">
+                https://doi.org/10.1016/j.ijbiomac.2020.11.071
+            </a>
+        </li>
+
+        <li>
+            <b>Panchal V*†, Brenk R*</b>.  
+            Riboswitches as Drug Targets for Antibiotics.  
+            <i>Antibiotics</i> 2021; 10(1):45.  
+            <a href="https://doi.org/10.3390/antibiotics10010045" target="_blank">
+                https://doi.org/10.3390/antibiotics10010045
+            </a>
+        </li>
+
+        <li>
+            <b>Panchal V†, Jatana N, Malik A, Taneja B, Pal R, Bhatt A, Besra GS, Thukral L, Chaudhary S*, Rao V*</b>.  
+            A novel mutation alters the stability of PapA2 resulting in the complete abrogation of sulfolipids in clinical mycobacterial strains.  
+            <i>FASEB Bioadv.</i> 2019; 1(5):306–319.  
+            <a href="https://doi.org/10.1096/fba.2018-00039" target="_blank">
+                https://doi.org/10.1096/fba.2018-00039
+            </a>
+        </li>
+
+        <li>
+            <b>Bothra A†, Arumugam P, Panchal V, et al.</b>  
+            Phospholipid homeostasis, membrane tenacity and survival of Mtb in lipid rich conditions is determined by MmpL11 function.  
+            <i>Sci Rep</i> 2018; 8:8317.  
+            <a href="https://doi.org/10.1038/s41598-018-26710-z" target="_blank">
+                https://doi.org/10.1038/s41598-018-26710-z
+            </a>
+        </li>
+
+        <li>
+            <b>Panchal V†, Bothra A, Chaudhary S*, Rao V*</b>.  
+            Molecular basis for mis-sense mutation-induced functional loss in Mtb PapA2.  
+            <i>Acta Crystallogr A</i> 2017; 73, C267.  
+            <a href="https://doi.org/10.1107/S2053273317093068" target="_blank">
+                https://doi.org/10.1107/S2053273317093068
+            </a>
+        </li>
+
+        <li>
+            <b>Laddha NC, Dwivedi M, Mansuri MS, Gani AR, Yeola AP, Panchal VN, et al.</b>  
+            Role of oxidative stress and autoimmunity in onset and progression of vitiligo.  
+            <i>Exp Dermatol</i> 2014; 23:352–353.  
+            <a href="https://doi.org/10.1111/exd.12103" target="_blank">
+                https://doi.org/10.1111/exd.12103
+            </a>
+        </li>
+
+    </ol>
+</section>
+
+<footer>
+    <p>© 2026 Vipul Navinchandra Panchal</p>
+</footer>
+
 </body>
 </html>
-
