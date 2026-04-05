@@ -17,10 +17,9 @@
     <h2>Forsker | Cheminformatics | Computational Drug Discovery</h2>
 </header>
 
-<!-- ✅ Automatic Navigation Bar -->
+<!-- ✅ Navigation Bar -->
 <nav class="navbar">
     <a href="index.html" class="nav-link">Home</a>
-    <a href="about.html" class="nav-link">About</a>
     <a href="research.html" class="nav-link">Research</a>
     <a href="grants.html" class="nav-link">Grants</a>
     <a href="publications.html" class="nav-link">Publications</a>
@@ -31,20 +30,39 @@
 <!-- ✅ Highlight Active Page -->
 <script>
     const currentPage = window.location.pathname.split("/").pop();
-    const links = document.querySelectorAll(".nav-link");
-
-    links.forEach(link => {
+    document.querySelectorAll(".nav-link").forEach(link => {
         if (link.getAttribute("href") === currentPage) {
             link.classList.add("active");
         }
     });
 </script>
 
+<!-- ✅ SECTION 1: Welcome -->
 <section>
     <h3>Welcome</h3>
     <p>
-        This is the homepage of my professional academic website. 
-        Explore the links above to learn more about my research, publications, and projects.
+        Welcome to my professional academic website. Explore my research work, publications,
+        scientific projects, and ongoing collaborations.
+    </p>
+</section>
+
+<!-- ✅ SECTION 2: About Me (moved here from about.html) -->
+<section>
+    <h3>About Me</h3>
+    <p>
+        I am a researcher specializing in developing integrated experimental and computational 
+        frameworks that transform RNA‑ligand discovery from isolated successes into scalable 
+        and reproducible biophysics‑driven pipelines. My work combines high‑throughput biophysics,
+        RNA structural mapping, and structure‑enabled virtual screening to systematically
+        interrogate challenging RNA and protein targets relevant to infectious diseases,
+        antimicrobial resistance, and rare genetic disorders.
+    </p>
+
+    <p>
+        Alongside RNA‑based drug discovery, I am deeply engaged in cheminformatics and
+        computational approaches—including machine learning for bioactivity prediction,
+        molecular descriptor analysis, and structure‑based design workflows. My interest lies
+        in bridging experimental and computational strategies to accelerate therapeutic discovery.
     </p>
 </section>
 
