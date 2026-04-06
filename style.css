@@ -42,14 +42,14 @@ ol li {
     line-height: 1.5;
 }
 
-/* ✅ Vipul Panchal Image Styling */
-.Vipul Panchal-container {
+/* ✅ Vipul Panchal.JPG Image Styling */
+.Vipul Panchal.JPG-container {
     width: 100%;
     text-align: center;
     margin: 30px 0;
 }
 
-.Vipul Panchal-image {
+.Vipul Panchal.JPG-image {
     width: 45%;
     max-width: 900px;
     border-radius: 12px;
@@ -57,6 +57,6 @@ ol li {
     transition: 0.3s ease;
 }
 
-.Vipul Panchal-image:hover {
+.Vipul Panchal.JPG-image:hover {
     transform: scale(1.02);
 }
