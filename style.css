@@ -53,27 +53,26 @@ ol li {
     padding: 0 20px;
 }
 
-/* ✅ LEFT — Picture2 Photo */
+/* LEFT — Picture2 Photo */
 .hero-left {
     flex: 1;
     text-align: center;
 }
 
-/* ✅ FINAL PASSPORT-SIZE PHOTO */
+/* ✅ ✅ PASSPORT-SIZE FIX — OVERRIDES ALL OTHER RULES */
+.hero-left .Picture2-image,
 .Picture2-image {
-    width: 150px !important;        /* ✅ passport size */
+    width: 150px !important;
     height: auto !important;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    transition: 0.3s ease;
+    max-width: 150px !important;
+    object-fit: cover !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2) !important;
+    display: block !important;
+    margin: 0 auto !important;
 }
 
-.Picture2-image:hover {
-    transform: scale(1.03);
-}
-
-/* ✅ RIGHT — Text Column */
+/* RIGHT — Text Column */
 .hero-right {
     flex: 2;
     line-height: 1.6;
